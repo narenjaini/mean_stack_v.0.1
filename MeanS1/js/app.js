@@ -1,6 +1,1 @@
-(function(){
-	
-	angular
-	.module("studentDetails", []);
-
-})();
+var app = angular.module('contactDetails',["ngRoute"]);

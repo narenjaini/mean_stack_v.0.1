@@ -1,0 +1,35 @@
+<!-- start of form controller -->
+<div id="add_contact" ng-controller ="addContactController">
+  <h1 class="text-center text-capitalize">Add a New Contact</h1>
+  <form>
+    <div class= "form-group">
+      <label for="exampleInputPassword1">{{ formHeaders.name }}</label>
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputfirst" placeholder="First">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputlast" placeholder="Last">
+        </div>
+      </div>
+    </div>
+    <div class="form-group email-ad">
+      <label for="exampleInputEmail1">{{ formHeaders.email }}</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group contact-num">
+      <label for="exampleInputPassword1">{{ formHeaders.contact }}</label>
+      <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="00-000-0000">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">{{ formHeaders.profilepic }}</label>
+      <input type="file" id="exampleInputFile">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+      <button type="submit" class="btn btn-default">{{ formHeaders.submit }}</button>
+  </form>
+</div>
