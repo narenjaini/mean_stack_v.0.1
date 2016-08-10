@@ -1,7 +1,7 @@
 app.config(function($routeProvider){
   $routeProvider
-    
-  /* route for contactlist view */
+ 
+ //* route for contactlist view */
   .when('/goContactList', {
     templateUrl: 'templates/contactList.html',
     controller: 'contactController'
