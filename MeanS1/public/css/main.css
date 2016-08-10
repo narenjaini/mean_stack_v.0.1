@@ -1,0 +1,56 @@
+
+img, h3{
+	display: inline-block;
+}
+
+.modal-dialog{
+	background: white;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    width: 340px;
+}
+
+.cont-info{
+	clear: both;
+	padding: 10px;
+}
+
+.searchFiled{
+	padding: 10px;
+}
+
+.navigation{
+	height: 75px;
+	padding: 20px;
+}
+#contact_details{
+	width: 70%;
+	margin: 0 auto;
+}
+h1{
+	margin-bottom: 50px;
+}
+.table tr td{
+	vertical-align: middle !important;
+}
+td:nth-child(1){
+	width: 15%
+}
+td:nth-child(2){
+	width: 25%
+}
+td:nth-child(3){
+	width: 40%
+}
+td:nth-child(4){
+	width: 20%
+}
+
+#add_contact{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.email-ad, .contact-num{
+	width: 60% !important;
+}
