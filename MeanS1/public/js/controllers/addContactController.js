@@ -1,4 +1,4 @@
-app.controller('addContactController', function($scope){
+/*app.controller('addContactController', function($scope){
   $scope.formHeaders = formheaders;
 });
 
@@ -9,3 +9,4 @@ var formheaders = {
   'contact': 'Contact number',
   'submit' : 'Submit'
 }
+*/
