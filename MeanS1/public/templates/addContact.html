@@ -3,33 +3,33 @@
   <h1 class="text-center text-capitalize">Add a New Contact</h1>
   <form>
     <div class= "form-group">
-      <label for="exampleInputPassword1">{{ formHeaders.name }}</label>
+      <label for="inputPassword1">{{ formHeaders.name }}</label>
       <div class="form-inline">
         <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputfirst" placeholder="First">
+          <input type="text" class="form-control" id="inputfirst" ng-model="contact.first_name" placeholder="First">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" id="exampleInputlast" placeholder="Last">
+          <input type="text" class="form-control" id="inputlast" ng-model="contact.last_name" placeholder="Last">
         </div>
       </div>
     </div>
     <div class="form-group email-ad">
-      <label for="exampleInputEmail1">{{ formHeaders.email }}</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+      <label for="inputEmail1">{{ formHeaders.email }}</label>
+      <input type="email" class="form-control" id="inputEmail1" ng-model="contact.email" placeholder="Email">
     </div>
     <div class="form-group contact-num">
-      <label for="exampleInputPassword1">{{ formHeaders.contact }}</label>
-      <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="00-000-0000">
+      <label for="inputPassword1">{{ formHeaders.contact }}</label>
+      <input type="tel" class="form-control" id="inputPassword1" ng-model="contact.phone" placeholder="00-000-0000">
     </div>
     <div class="form-group">
-      <label for="exampleInputFile">{{ formHeaders.profilepic }}</label>
-      <input type="file" id="inputFile">
+      <label for="inputFile">{{ formHeaders.profilepic }}</label>
+      <input type="file" id="inputFile" ng-model="contact.img_url">
     </div>
     <div class="checkbox">
       <label>
         <input type="checkbox"> Check me out
       </label>
     </div>
-      <button type="submit" class="btn btn-default">{{ formHeaders.submit }}</button>
+      <button type="submit" class="btn btn-default" ng-click="addContact()">{{ formHeaders.submit }}</button>
   </form>
 </div>

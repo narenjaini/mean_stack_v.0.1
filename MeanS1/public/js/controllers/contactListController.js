@@ -1,17 +1,29 @@
-app.controller("contactController", function($scope, $http){
+app.controller("contactController", function($scope, $http){  
 
-  $scope.formHeaders = formheaders;
+  $scope.formHeaders = formHeaders;
 
-  $http.get('/personalContactList').success(function(response){
-    console.log('I got the data I requested');
-    $scope.personalContactList = response;
-  });
-
+  var refresh = function(){
+    $http.get('/personalContactList').success(function(response){
+      console.log('I got the data I requested');
+      $scope.personalContactList = response;
+      $scope.contact = "";
+    });
+  };
+  
+  refresh();
+  
+  $scope.addContact = function(){ debugger;
+    console.log($scope.contact);
+    $http.post('/personalContactList', $scope.contact).success(function(response){
+      console.log(response);
+      refresh();
+    });
+  }
   
 });
 
 
-var formheaders = {
+var formHeaders = {
   'email' : 'Email address',
   'name' : 'Name',
   'profilepic' : 'Profile picture',
